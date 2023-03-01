@@ -41,3 +41,5 @@ You can return the book by entering its ID again.
 Please remember your username and password for admin and user accounts. The data is stored after encryption and cannot be read from the text file. Once you forget your username or password, you won't be able to retrieve it. So, please store it in a safe place.
 
 Only one admin account can be created. Please make sure to remember the admin username and password. If you forget it, you won't be able to access the admin interface. So you have to download the project once again and freshly run it.
+
+Compiled with MSVC (visual studio compiler), Some error may occur with mingw compiler. So i strongly suggest you to use Visual Studio.
