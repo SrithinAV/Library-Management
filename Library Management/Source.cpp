@@ -104,8 +104,8 @@ bool login_signup::admin()
 	if (ch == 'y')
 	{     
 
-	login:  // goto at line 120
-		ch = 'y'; // prevent from becoming the condition true at line no: 82
+	login:  
+		ch = 'y'; 
 		std::vector<std::string> row;
 		std::string line, word, temp;
 
@@ -156,7 +156,7 @@ bool login_signup::admin()
 	}
 	else if(ch == 'n')
 	{ 
-	signup: //goto at 136
+	signup: 
 		cin.ignore();
 		cout << "--------------Create Account--------------\n" << std::endl;
 		cout << "Enter your name: " << std::endl;
@@ -340,10 +340,7 @@ void user_main_menu::take_book()
 		}
 
 
-		fstream copy_of_available_books; // , firsthalf, secondhalf;
-
-		//firsthalf.open("bookfirsthalf.txt", ios::in | ios::out | ios::app);
-		//secondhalf.open("booksecondhalf.txt", ios::in | ios::out | ios::app);
+		fstream copy_of_available_books; 
 		copy_of_available_books.open("books/CheckBooks.txt", ios::in | ios::out | ios::app);
 		book.open("books/available_books.txt", ios::in | ios::out | ios::app);
 		if (book.is_open())
@@ -1659,7 +1656,6 @@ void Main_menu::take_book()
 			cin.ignore(); // clear buffer
 			//cin.get();
 			int i = 0;
-			//const char* f;
 			while (getline(rename_book, store_))
 			{
 
